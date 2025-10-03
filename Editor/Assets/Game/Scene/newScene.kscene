@@ -1,0 +1,1630 @@
+<Scene>
+    <Background>{ 0.318243, 0.518938, 0.843137, 0 }</Background>
+    <Camera>17</Camera>
+    <SceneRoot>
+        <Id>16</Id>
+        <CanUpdate>1</CanUpdate>
+        <Position>{ 0, 0, 0 }</Position>
+        <Rotation>{ 0, 0, 0, 1 }</Rotation>
+        <Scale>{ 1, 1, 1 }</Scale>
+        <DeletePolicy>1</DeletePolicy>
+        <Children>
+            <Camera>
+                <Id>17</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>MainCamera</Name>
+                <Position>{ 0, 3, -15 }</Position>
+                <Rotation>{ 0, 0, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <PhysicComponent>
+                        <Id>21</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>1</Mass>
+                        <Shape>3</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 0.3, 1, 1 }</Scale>
+                        <Tag>Player</Tag>
+                        <Friction>1</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>1</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>1</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>1</RotationZ>
+                    </PhysicComponent>
+                    <ScriptComponent>
+                        <Id>22</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Source>"Game/Script/Player.kasset"</Source>
+                    </ScriptComponent>
+                    <AudioListenerComponent>
+                        <Id>199</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Primary>1</Primary>
+                    </AudioListenerComponent>
+                    <AudioComponent>
+                        <Id>200</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Sound>"Game/Sound/positive.kasset"</Sound>
+                        <Volume>1</Volume>
+                    </AudioComponent>
+                </Components>
+            </Camera>
+            <GameObject>
+                <Id>18</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>StartGround</Name>
+                <Position>{ 0, -10, -14.5 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 20, 20, 20 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <PhysicComponent>
+                        <Id>19</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 20, 20, 20 }</Scale>
+                        <Tag>Ground</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                    <RenderComponent>
+                        <Id>20</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                        <Material>"Game/Material/Rubixat.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>23</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>PlatformStocker</Name>
+                <Position>{ 0, 0, 0 }</Position>
+                <Rotation>{ 0, -2.18557e-08, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Children>
+                    <GameObject>
+                        <Id>24</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -0.404907, -1.25, -27.1941 }</Position>
+                        <Rotation>{ -0.707107, 1.54543e-08, -1.54543e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>25</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/red.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>26</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>27</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -4.36559, -1.25, -30.9776 }</Position>
+                        <Rotation>{ -0.707107, 5.32907e-15, -3.09086e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>28</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/blue.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>29</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>30</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 0, -1.25, -35.1017 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>31</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>32</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>36</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -3.34206, -1.25, -63.3354 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>37</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/blue.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>38</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>41</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 3.5912, -1.25, -68.2451 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>42</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>45</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>43</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -3.27931, -1.35, -74.3817 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PhysicComponent>
+                                <Id>44</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                            <RenderComponent>
+                                <Id>46</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/red.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>55</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -5.4, -1.25, -108.001 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>56</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>57</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>58</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 5.77, -1.25, -115.582 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PhysicComponent>
+                                <Id>59</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                            <RenderComponent>
+                                <Id>60</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/red.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>62</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -5.4, -1.25, -121.867 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>63</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/blue.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>64</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>68</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 5.77, -1.25, -127.689 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PhysicComponent>
+                                <Id>69</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                            <RenderComponent>
+                                <Id>70</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/red.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>78</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -5.4, -1.25, -134.007 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>79</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>81</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>100</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 10.4624, -1.25, -167 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>101</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>114</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>102</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 22, -1.25, -172 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>103</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/blue.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>113</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>104</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 34, -1.25, -172 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>105</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/red.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>112</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>106</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 43, -1.25, -165 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>107</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>111</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>120</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 46, -1.25, -136 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>121</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/blue.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>137</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>122</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 46, -1.25, -124.5 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>123</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>136</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>124</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 46, -1.25, -113 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>125</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/blue.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>135</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>126</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 46, -1.25, -102 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>127</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/red.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>134</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>128</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 46, -1.25, -90 }</Position>
+                        <Rotation>{ -0.707107, -2.10734e-08, -5.1982e-08, 0.707107 }</Rotation>
+                        <Scale>{ 200, 200, 200 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>129</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"lego brick.kasset"</Mesh>
+                                <Material>"Kaput/Material/green.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>133</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 3, 3, 2.7 }</Scale>
+                                <Tag>Ground</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                </Children>
+            </GameObject>
+            <GameObject>
+                <Id>33</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>SecondGround</Name>
+                <Position>{ 0, -10, -48 }</Position>
+                <Rotation>{ 0, 0, 0, 1 }</Rotation>
+                <Scale>{ 20, 20, 20 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>34</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                        <Material>"Game/Material/Rubixat.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <PhysicComponent>
+                        <Id>35</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 20, 20, 20 }</Scale>
+                        <Tag>Ground</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>47</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>ThirdGround</Name>
+                <Position>{ 0, -10, -90 }</Position>
+                <Rotation>{ 0, 0.707107, 0, 0.707107 }</Rotation>
+                <Scale>{ 20, 20, 20 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>48</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                        <Material>"Game/Material/Rubixat.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <PhysicComponent>
+                        <Id>49</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 20, 20, 20 }</Scale>
+                        <Tag>Ground</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>71</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>WallStocker</Name>
+                <Position>{ 0, 0, 0 }</Position>
+                <Rotation>{ 0, -2.18557e-08, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Children>
+                    <GameObject>
+                        <Id>74</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -5.58356, 0.782259, -113.875 }</Position>
+                        <Rotation>{ 0, 0.700909, 0, 0.71325 }</Rotation>
+                        <Scale>{ 0.1, 5, 3.00354 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>75</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                                <Material>"Game/Material/StopCard.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>91</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 0.1, 5, 3 }</Scale>
+                                <Tag>Death</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>84</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 5.77, 0, -107.912 }</Position>
+                        <Rotation>{ 0, 0.706985, 0, 0.707229 }</Rotation>
+                        <Scale>{ 0.1, 5, 3 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>85</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                                <Material>"Game/Material/StopCard.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>90</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 0.1, 5, 3 }</Scale>
+                                <Tag>Death</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>86</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 5.77, 0, -121.281 }</Position>
+                        <Rotation>{ 0, 0.700909, 0, 0.71325 }</Rotation>
+                        <Scale>{ 0.1, 5, 3 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>87</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                                <Material>"Game/Material/StopCard.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>92</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 0.1, 5, 3 }</Scale>
+                                <Tag>Death</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>88</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 5.77, 0, -133.846 }</Position>
+                        <Rotation>{ 0, 0.700909, 0, 0.71325 }</Rotation>
+                        <Scale>{ 0.1, 5, 3 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>89</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                                <Material>"Game/Material/StopCard.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>94</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 0.1, 5, 3 }</Scale>
+                                <Tag>Death</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>95</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -5.4, 0, -128.508 }</Position>
+                        <Rotation>{ 0, 0.700911, 0, 0.713249 }</Rotation>
+                        <Scale>{ 0.1, 5, 3 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>96</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                                <Material>"Game/Material/StopCard.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>188</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>0</Mass>
+                                <Shape>1</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 0.1, 5, 3 }</Scale>
+                                <Tag>Death</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                </Children>
+            </GameObject>
+            <GameObject>
+                <Id>97</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>Fourthfloor##97</Name>
+                <Position>{ 46, -10, -150 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 20, 20, 20 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>98</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                        <Material>"Game/Material/Rubixat.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <PhysicComponent>
+                        <Id>99</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 20, 20, 20 }</Scale>
+                        <Tag>Ground</Tag>
+                        <Friction>0.25</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>108</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>Fifthfloor##108</Name>
+                <Position>{ 0, -10, -150 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 20, 20, 20 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>109</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                        <Material>"Game/Material/Rubixat.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <PhysicComponent>
+                        <Id>110</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 20, 20, 20 }</Scale>
+                        <Tag>Ground</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>115</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>FallGuy##115</Name>
+                <Position>{ 28, 5.5, -172 }</Position>
+                <Rotation>{ 3.65277e-08, -3.65277e-08, 0.707107, 0.707107 }</Rotation>
+                <Scale>{ 1.5, 1.5, 1.5 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>116</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/Knife_01.kasset"</Mesh>
+                        <Material>"Game/Material/KnifeToy.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <PhysicComponent>
+                        <Id>117</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>1</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 1, 1, 5 }</Scale>
+                        <Tag>Death</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>1</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>1</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>1</RotationZ>
+                    </PhysicComponent>
+                    <ScriptComponent>
+                        <Id>118</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Source>"Game/Script/FallGuy.kasset"</Source>
+                    </ScriptComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>138</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>Balls##138##138</Name>
+                <Position>{ 0, 0, 0 }</Position>
+                <Rotation>{ 0, -2.18557e-08, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Children>
+                    <GameObject>
+                        <Id>139</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 38, 1.67871, -135.441 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 0.1, 0.1, 0.1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>140</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/basketball.kasset"</Mesh>
+                                <Material>"Game/Material/Basket.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>141</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>1</Mass>
+                                <Shape>2</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 1.3, 1, 1 }</Scale>
+                                <Tag>None</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                            <ScriptComponent>
+                                <Id>145</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Source>"Game/Script/BounceGuy.kasset"</Source>
+                            </ScriptComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>149</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 38, 1.5, -113 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 0.1, 0.1, 0.1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>150</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/basketball.kasset"</Mesh>
+                                <Material>"Game/Material/Basket.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>151</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>1</Mass>
+                                <Shape>2</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 1.3, 1, 1 }</Scale>
+                                <Tag>None</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                            <ScriptComponent>
+                                <Id>152</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Source>"Game/Script/BounceGuy.kasset"</Source>
+                            </ScriptComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>153</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 38, 1.5, -90 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 0.1, 0.1, 0.1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>154</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/basketball.kasset"</Mesh>
+                                <Material>"Game/Material/Basket.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>155</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>1</Mass>
+                                <Shape>2</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 1.3, 1, 1 }</Scale>
+                                <Tag>None</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                            <ScriptComponent>
+                                <Id>165</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Source>"Game/Script/BounceGuy.kasset"</Source>
+                            </ScriptComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>156</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 54, 1.5, -124.5 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 0.1, 0.1, 0.1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>157</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/basketball.kasset"</Mesh>
+                                <Material>"Game/Material/Basket.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <ScriptComponent>
+                                <Id>158</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Source>"Game/Script/Bounceguy2.kasset"</Source>
+                            </ScriptComponent>
+                            <PhysicComponent>
+                                <Id>159</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>1</Mass>
+                                <Shape>2</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 1.3, 1, 1 }</Scale>
+                                <Tag>None</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>160</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 54, 1.5, -102 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 0.1, 0.1, 0.1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <RenderComponent>
+                                <Id>161</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <CanRender>1</CanRender>
+                                <Mesh>"Game/Mesh/basketball.kasset"</Mesh>
+                                <Material>"Game/Material/Basket.kasset"</Material>
+                                <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                            </RenderComponent>
+                            <PhysicComponent>
+                                <Id>162</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Mass>1</Mass>
+                                <Shape>2</Shape>
+                                <PhysicUpdate>1</PhysicUpdate>
+                                <Scale>{ 1.3, 1, 1 }</Scale>
+                                <Tag>None</Tag>
+                                <Friction>0.5</Friction>
+                                <TranslationX>0</TranslationX>
+                                <RotationX>0</RotationX>
+                                <TranslationY>0</TranslationY>
+                                <RotationY>0</RotationY>
+                                <TranslationZ>0</TranslationZ>
+                                <RotationZ>0</RotationZ>
+                            </PhysicComponent>
+                            <ScriptComponent>
+                                <Id>163</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Source>"Game/Script/Bounceguy2.kasset"</Source>
+                            </ScriptComponent>
+                        </Components>
+                    </GameObject>
+                </Children>
+            </GameObject>
+            <GameObject>
+                <Id>168</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>LightStocker##168</Name>
+                <Position>{ 0, 0, 0 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Children>
+                    <GameObject>
+                        <Id>169</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 0.644756, 6, -14.5 }</Position>
+                        <Rotation>{ 0, -2.18557e-08, 0, 1 }</Rotation>
+                        <Scale>{ 1, 1, 1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PointLightComponent>
+                                <Id>170</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Color>{ 0.265164, 0.946078, 0.0556517, 0 }</Color>
+                                <Enabled>1</Enabled>
+                                <Intensity>1000</Intensity>
+                            </PointLightComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>171</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -4.95917e-06, 6, -48 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 1, 1, 1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PointLightComponent>
+                                <Id>172</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Color>{ 0.412472, 0.356089, 0.995098, 0 }</Color>
+                                <Enabled>1</Enabled>
+                                <Intensity>2000</Intensity>
+                            </PointLightComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>173</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -9.29844e-06, 6, -90 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 1, 1, 1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PointLightComponent>
+                                <Id>174</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Color>{ 1, 0, 0, 0 }</Color>
+                                <Enabled>1</Enabled>
+                                <Intensity>1000</Intensity>
+                            </PointLightComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>175</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ -1.54974e-05, 6, -150 }</Position>
+                        <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 1, 1, 1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PointLightComponent>
+                                <Id>176</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Color>{ 0.22549, 1, 0.886101, 0 }</Color>
+                                <Enabled>1</Enabled>
+                                <Intensity>1000</Intensity>
+                            </PointLightComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>201</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Name>Directionnal##201</Name>
+                        <Position>{ 0, 0, 0 }</Position>
+                        <Rotation>{ 0, 5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 1, 1, 1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <DirectionalLightComponent>
+                                <Id>202</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Color>{ 1, 1, 1, 0 }</Color>
+                                <Enabled>0</Enabled>
+                                <Intensity>12</Intensity>
+                                <Direction>{ -3, 1, 0 }</Direction>
+                            </DirectionalLightComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>209</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 46, 6, -150 }</Position>
+                        <Rotation>{ 0, 5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 1, 1, 1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PointLightComponent>
+                                <Id>210</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Color>{ 0.882353, 0, 1, 0 }</Color>
+                                <Enabled>1</Enabled>
+                                <Intensity>1000</Intensity>
+                            </PointLightComponent>
+                        </Components>
+                    </GameObject>
+                    <GameObject>
+                        <Id>211</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Position>{ 46, 6, -70 }</Position>
+                        <Rotation>{ 0, 5.1658e-08, 0, 1 }</Rotation>
+                        <Scale>{ 1, 1, 1 }</Scale>
+                        <DeletePolicy>1</DeletePolicy>
+                        <Components>
+                            <PointLightComponent>
+                                <Id>212</Id>
+                                <CanUpdate>1</CanUpdate>
+                                <Color>{ 0.960784, 0.431771, 0.0141292, 0 }</Color>
+                                <Enabled>1</Enabled>
+                                <Intensity>1000</Intensity>
+                            </PointLightComponent>
+                        </Components>
+                    </GameObject>
+                </Children>
+            </GameObject>
+            <GameObject>
+                <Id>130</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>ArrivalPlatform##130</Name>
+                <Position>{ 46, -10, -70 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 20, 20, 20 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>131</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/cube2.kasset"</Mesh>
+                        <Material>"Game/Material/Rubixat.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <PhysicComponent>
+                        <Id>132</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 20, 20, 20 }</Scale>
+                        <Tag>Ground</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>203</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>Star##203</Name>
+                <Position>{ 46, 1.00105, -62.3093 }</Position>
+                <Rotation>{ 0, 0, 0, 1 }</Rotation>
+                <Scale>{ 3, 3, 3 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>204</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/Star_obj.kasset"</Mesh>
+                        <Material>"Kaput/Material/yellow.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <PhysicComponent>
+                        <Id>205</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 1.8, 1.9, 1 }</Scale>
+                        <Tag>None</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>1</TranslationX>
+                        <RotationX>1</RotationX>
+                        <TranslationY>1</TranslationY>
+                        <RotationY>1</RotationY>
+                        <TranslationZ>1</TranslationZ>
+                        <RotationZ>1</RotationZ>
+                    </PhysicComponent>
+                    <ScriptComponent>
+                        <Id>208</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Source>"Game/Script/StartScript.kasset"</Source>
+                    </ScriptComponent>
+                    <AudioComponent>
+                        <Id>243</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Sound>"Game/Sound/winSound.kasset"</Sound>
+                        <Volume>1</Volume>
+                    </AudioComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>216</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>DeadZone##216</Name>
+                <Position>{ 23, -20, -103.09 }</Position>
+                <Rotation>{ 0, 0, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <PhysicComponent>
+                        <Id>217</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>1</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 100, 1, 220 }</Scale>
+                        <Tag>Death</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>218</Id>
+                <CanUpdate>1</CanUpdate>
+                <Position>{ 0, 1, -2 }</Position>
+                <Rotation>{ 0, 0, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <AudioComponent>
+                        <Id>219</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Sound>"Game/Sound/ambiantSound.kasset"</Sound>
+                        <Volume>1</Volume>
+                    </AudioComponent>
+                    <ScriptComponent>
+                        <Id>220</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Source>"Game/Script/ambentSound.kasset"</Source>
+                    </ScriptComponent>
+                </Components>
+            </GameObject>
+        </Children>
+    </SceneRoot>
+    <HUD>
+        <UIText>
+            <Id>198</Id>
+            <CanUpdate>1</CanUpdate>
+            <Name>Timer</Name>
+            <Postion>{ 0, 0, 0, 0 }</Postion>
+            <size>{ 0, 0 }</size>
+            <anchored>1</anchored>
+            <align>0</align>
+            <Text>TIME:22.4 m</Text>
+            <Color>{ 1, 1, 1, 1 }</Color>
+        </UIText>
+    </HUD>
+    <TagSize>5</TagSize>
+    <Tag0>Player</Tag0>
+    <Tag1>Ground</Tag1>
+    <Tag2>Death</Tag2>
+    <Tag3>None</Tag3>
+    <Tag4>Arrival</Tag4>
+</Scene>

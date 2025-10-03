@@ -1,0 +1,33 @@
+<Material>
+    <Albedo>
+        <Global>{1, 1}</Global>
+        <Texture>
+            <Index>0</Index>
+            <Source>"Game/Texture/katana/antique_katana_01_diff_4k.kasset"</Source>
+        </Texture>
+    </Albedo>
+    <Normal>
+        <Texture>
+            <Index>1</Index>
+            <Source>"Game/Texture/katana/antique_katana_01_nor_gl_4k.kasset"</Source>
+        </Texture>
+    </Normal>
+    <Roughness>
+        <Texture>
+            <Index>2</Index>
+            <Source>"Game/Texture/katana/antique_katana_01_rough_4k.kasset"</Source>
+        </Texture>
+    </Roughness>
+    <Metallic>
+        <Texture>
+            <Index>3</Index>
+            <Source>"Game/Texture/katana/antique_katana_01_metal_4k.kasset"</Source>
+        </Texture>
+    </Metallic>
+    <AmbientOcclusion>
+        <Texture>
+            <Index>4</Index>
+            <Source>"Game/Texture/katana/antique_katana_01_ao_4k.kasset"</Source>
+        </Texture>
+    </AmbientOcclusion>
+</Material>

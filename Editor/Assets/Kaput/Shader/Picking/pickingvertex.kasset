@@ -1,0 +1,4 @@
+<Shader>
+    <Source>"Kaput/Shader/Picking/Picking.vertexshader"</Source>
+    <Type>"Vertex"</Type>
+</Shader>

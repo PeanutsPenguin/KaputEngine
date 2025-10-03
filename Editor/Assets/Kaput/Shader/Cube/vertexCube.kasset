@@ -1,0 +1,4 @@
+<Shader>
+    <Source>"Kaput/Shader/Cube/fragmentCube.glsl"</Source>
+    <Type>"Fragment"</Type>
+</Shader>

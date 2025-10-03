@@ -1,0 +1,21 @@
+<Material>
+    <Albedo>
+        <Global>{1, 1}</Global>
+        <Texture>
+            <Index>0</Index>
+            <Source>"Game/Texture/concrete.kasset"</Source>
+        </Texture>
+    </Albedo>
+    <Normal>
+        <Attribute>2</Attribute>
+    </Normal>
+    <Roughness>
+        <Global>0.1</Global>
+    </Roughness>
+    <Metallic>
+        <Global>0.9</Global>
+    </Metallic>
+    <AmbientOcclusion>
+        <Global>1</Global>
+    </AmbientOcclusion>
+</Material>

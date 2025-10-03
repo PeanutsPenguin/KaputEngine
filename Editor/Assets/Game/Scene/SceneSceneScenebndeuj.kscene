@@ -1,0 +1,11 @@
+<Scene>
+    <Background>{ 0, 0, 0, 0 }</Background>
+    <SceneRoot>
+        <Id>6</Id>
+        <CanUpdate>1</CanUpdate>
+        <Position>{ 0, 0, 0 }</Position>
+        <Rotation>{ 0, 0, 0, 1 }</Rotation>
+        <Scale>{ 1, 1, 1 }</Scale>
+        <DeletePolicy>1</DeletePolicy>
+    </SceneRoot>
+</Scene>

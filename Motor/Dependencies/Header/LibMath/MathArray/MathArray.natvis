@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file provides custom debug views for MathArray objects -->
+<!-- Custom views used automatically as long as this file is included in the project/target -->
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <!-- Custom view for 2D arrays -->
+<Type Name="LibMath::Internal::MathArrayBase&lt;*&gt;">
+  <Expand>
+    <ArrayItems>
+      <Direction>Forward</Direction>
+      <Size>Width</Size>
+      <ValuePointer>m_Values</ValuePointer>
+    </ArrayItems>
+  </Expand>
+</Type>
+
+  <!-- Custom view for 1D (linear) arrays -->
+<Type Name="LibMath::Internal::MathArrayBase&lt;1,*&gt;">
+  <Expand>
+    <ArrayItems>
+      <Direction>Forward</Direction>
+      <Size>Height</Size>
+      <ValuePointer>*m_Values</ValuePointer>
+    </ArrayItems>
+  </Expand>
+</Type>
+
+</AutoVisualizer>

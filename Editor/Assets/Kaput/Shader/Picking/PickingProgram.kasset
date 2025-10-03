@@ -1,0 +1,6 @@
+<ShaderProgram>
+    <Shaders>
+        <Shader>"Kaput/Shader/Picking/pickingVertex.kasset"</Shader>
+        <Shader>"Kaput/Shader/Picking/pickingFragment.kasset"</Shader>
+    </Shaders>
+</ShaderProgram>

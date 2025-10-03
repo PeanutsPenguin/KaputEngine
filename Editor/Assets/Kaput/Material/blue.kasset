@@ -1,0 +1,17 @@
+<Material>
+    <Albedo>
+        <Global>{0, 0, 1, 1}</Global>
+    </Albedo>
+    <Normal>
+        <Attribute>3</Attribute>
+    </Normal>
+    <Roughness>
+        <Global>0.1</Global>
+    </Roughness>
+    <Metallic>
+        <Global>0.9</Global>
+    </Metallic>
+    <AmbientOcclusion>
+        <Global>1</Global>
+    </AmbientOcclusion>
+</Material>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file provides custom debug views for Color objects -->
+<!-- Custom views used automatically as long as this file is included in the project/target -->
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+<Type Name="KaputEngine::Rendering::Color">
+  <Expand>
+    <Item Name="Red">m_Values[0][0]</Item>
+    <Item Name="Green">m_Values[0][1]</Item>
+    <Item Name="Blue">m_Values[0][2]</Item>
+    <Item Name="Alpha">m_Values[0][3]</Item>
+  </Expand>
+</Type>
+
+</AutoVisualizer>

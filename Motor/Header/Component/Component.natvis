@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file provides custom debug views for Component objects -->
+<!-- Custom views used automatically as long as this file is included in the project/target -->
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="KaputEngine::Component">
+    <DisplayString>{{ Name={name} Id={m_id} Updating={m_canUpdate} }}</DisplayString>
+    <Expand>
+      <Item Name="[Name]">name</Item>
+      <Item Name="[Id]">m_id</Item>
+      <Item Name="[Object]">m_parentObject</Item>
+      <Item Name="[Scene]">m_parentObject.m_scene</Item>
+      <Item Name="[CanUpdate]">m_canUpdate</Item>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>

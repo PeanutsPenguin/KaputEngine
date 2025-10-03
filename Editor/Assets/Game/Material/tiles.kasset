@@ -1,0 +1,28 @@
+<Material>
+    <Albedo>
+        <Global>{1, 1}</Global>
+        <Texture>
+            <Index>0</Index>
+            <Source>"Game/Texture/tiles/Tiles129B_2K-JPG_Color.kasset"</Source>
+        </Texture>
+    </Albedo>
+    <Normal>
+        <Texture>
+            <Index>1</Index>
+            <Source>"Game/Texture/tiles/Tiles129B_2K-JPG_NormalGL.kasset"</Source>
+        </Texture>
+    </Normal>
+    <Roughness>
+        <Texture>
+            <Index>2</Index>
+            <Source>"Game/Texture/tiles/Tiles129B_2K-JPG_Roughness.kasset"</Source>
+        </Texture>
+    </Roughness>
+    <Metallic>
+        <Global>0</Global>
+    </Metallic>
+        <Texture>
+            <Index>3</Index>
+            <Source>"Game/Texture/tiles/Tiles129B_2K-JPG_AmbientOcclusion.kasset"</Source>
+        </Texture>
+</Material>

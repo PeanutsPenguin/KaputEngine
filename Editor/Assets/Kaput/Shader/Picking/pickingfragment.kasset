@@ -1,0 +1,4 @@
+<Shader>
+    <Source>"Kaput/Shader/Picking/Picking.fragmentshader</Source>
+    <Type>"Fragment"</Type>
+</Shader>

@@ -1,0 +1,4 @@
+<Shader>
+    <Source>"Kaput/Shader/PBR/pbr.frag"</Source>
+    <Type>"Fragment"</Type>
+</Shader>

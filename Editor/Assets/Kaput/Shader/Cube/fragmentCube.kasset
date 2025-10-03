@@ -1,0 +1,4 @@
+<Shader>
+    <Source>"Kaput/Shader/Cube/vertexCube.glsl"</Source>
+    <Type>"Vertex"</Type>
+</Shader>

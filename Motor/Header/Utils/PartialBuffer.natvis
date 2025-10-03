@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+<Type Name="KaputEngine::PartialBuffer&lt;*&gt;">
+  <DisplayString>{{Inline={$T2} Actual={m_size}}}</DisplayString>
+  <Expand>
+    <ArrayItems>
+      <Direction>Forward</Direction>
+      <Size>m_size</Size>
+      <ValuePointer>m_ptr</ValuePointer>
+    </ArrayItems>
+  </Expand>
+</Type>
+
+</AutoVisualizer>

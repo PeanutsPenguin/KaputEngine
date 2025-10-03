@@ -1,0 +1,5 @@
+newmtl cube
+   map_Kd cube_with_texture.png
+
+newmtl texture
+   map_Kd cube_with_texture.jpg

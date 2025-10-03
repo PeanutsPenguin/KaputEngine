@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file provides custom debug views for PointAliases objects -->
+<!-- Custom views used automatically as long as this file is included in the project/target -->
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="LibMath::Internal::PointAliases&lt;*&gt;">
+    <Expand>
+      <Item Condition="_size >= 1" Name="x">*(((_dataType*)this) + _offset)</Item>
+      <Item Condition="_size >= 2" Name="y">*(((_dataType*)this) + _offset + 1)</Item>
+      <Item Condition="_size >= 3" Name="z">*(((_dataType*)this) + _offset + 2)</Item>
+      <Item Condition="_size >= 4" Name="w">*(((_dataType*)this) + _offset + 3)</Item>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>

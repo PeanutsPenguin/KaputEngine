@@ -1,0 +1,6 @@
+<ShaderProgram>
+    <Shaders>
+        <Shader>"Kaput/Shader/Cube/vertexCube.kasset"</Shader>
+        <Shader>"Kaput/Shader/Cube/fragmentCube.kasset"</Shader>
+    </Shaders>
+</ShaderProgram>

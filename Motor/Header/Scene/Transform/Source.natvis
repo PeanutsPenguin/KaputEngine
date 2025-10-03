@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file provides custom debug views for TransformSource objects -->
+<!-- Custom views used automatically as long as this file is included in the project/target -->
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+<Type Name="KaputEngine::TransformSource" Inheritable="false">
+  <Expand>
+    <Item Name="[Local]">m_localTransform</Item>
+    <Synthetic Name="[World]">
+      <DisplayString>{{ Dirty={m_dirtyTransform} }}</DisplayString>
+      <Expand>
+        <Item Name="[Dirty]">m_dirtyTransform</Item>
+        <ExpandedItem>m_worldTransform</ExpandedItem>
+      </Expand>
+    </Synthetic>
+  </Expand>
+</Type>
+
+</AutoVisualizer>

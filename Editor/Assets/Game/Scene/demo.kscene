@@ -1,0 +1,164 @@
+<Scene>
+    <Background>{ 0, 0, 1, 0 }</Background>
+    <Camera>12</Camera>
+    <SceneRoot>
+        <Id>11</Id>
+        <CanUpdate>1</CanUpdate>
+        <Position>{ 0, 0, 0 }</Position>
+        <Rotation>{ 0, 0, 0, 1 }</Rotation>
+        <Scale>{ 1, 1, 1 }</Scale>
+        <DeletePolicy>1</DeletePolicy>
+        <Children>
+            <Camera>
+                <Id>12</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>Player</Name>
+                <Position>{ -6.61177, 0, 0 }</Position>
+                <Rotation>{ 0, -2.18557e-08, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <PhysicComponent>
+                        <Id>29</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Mass>0</Mass>
+                        <Shape>3</Shape>
+                        <PhysicUpdate>1</PhysicUpdate>
+                        <Scale>{ 0.5, 1, 1 }</Scale>
+                        <Tag>Player</Tag>
+                        <Friction>0.5</Friction>
+                        <TranslationX>0</TranslationX>
+                        <RotationX>0</RotationX>
+                        <TranslationY>0</TranslationY>
+                        <RotationY>0</RotationY>
+                        <TranslationZ>0</TranslationZ>
+                        <RotationZ>0</RotationZ>
+                    </PhysicComponent>
+                    <ScriptComponent>
+                        <Id>32</Id>
+                        <CanUpdate>1</CanUpdate>
+                    </ScriptComponent>
+                </Components>
+            </Camera>
+            <GameObject>
+                <Id>13</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>Katana</Name>
+                <Position>{ -0.158509, 0, -2.18029 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>14</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Name>Mesh</Name>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/antique_katana_01_4k.kasset"</Mesh>
+                        <Material>"Game/Material/antique_katana_01_4k.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>16</Id>
+                <CanUpdate>1</CanUpdate>
+                <Name>Light</Name>
+                <Position>{ -0.0102682, -0.709314, -0.0180005 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 1, 1, 1 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <PointLightComponent>
+                        <Id>17</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Color>{ 1, 1, 1, 0 }</Color>
+                        <Enabled>1</Enabled>
+                        <Intensity>10</Intensity>
+                    </PointLightComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>22</Id>
+                <CanUpdate>0</CanUpdate>
+                <Name>Floor</Name>
+                <Position>{ -16.8032, 0, 0 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 5, 1, 5 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>23</Id>
+                        <CanUpdate>0</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/floor.kasset"</Mesh>
+                        <Material>"Game/Material/tiles.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>23</Id>
+                <CanUpdate>0</CanUpdate>
+                <Name>Floor2</Name>
+                <Position>{ -6.83048, 0, 0 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 5, 1, 5 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>24</Id>
+                        <CanUpdate>0</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/floor.kasset"</Mesh>
+                        <Material>"Game/Material/tiles.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                    <ScriptComponent>
+                        <Id>31</Id>
+                        <CanUpdate>1</CanUpdate>
+                        <Source>"Kaput/Script/Test2.kasset"</Source>
+                    </ScriptComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>24</Id>
+                <CanUpdate>0</CanUpdate>
+                <Name>Floor3</Name>
+                <Position>{ 13.1109, 0, 0 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 5, 1, 5 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>25</Id>
+                        <CanUpdate>0</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/floor.kasset"</Mesh>
+                        <Material>"Game/Material/tiles.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                </Components>
+            </GameObject>
+            <GameObject>
+                <Id>26</Id>
+                <CanUpdate>0</CanUpdate>
+                <Name>Floor4</Name>
+                <Position>{ 3.15276, 0, 0 }</Position>
+                <Rotation>{ 0, -5.1658e-08, 0, 1 }</Rotation>
+                <Scale>{ 5, 1, 5 }</Scale>
+                <DeletePolicy>1</DeletePolicy>
+                <Components>
+                    <RenderComponent>
+                        <Id>27</Id>
+                        <CanUpdate>0</CanUpdate>
+                        <CanRender>1</CanRender>
+                        <Mesh>"Game/Mesh/floor.kasset"</Mesh>
+                        <Material>"Game/Material/tiles.kasset"</Material>
+                        <ShaderProgram>"Kaput/Shader/pbr/pbr.kasset"</ShaderProgram>
+                    </RenderComponent>
+                </Components>
+            </GameObject>
+        </Children>
+    </SceneRoot>
+</Scene>

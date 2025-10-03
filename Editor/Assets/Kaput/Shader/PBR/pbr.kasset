@@ -1,0 +1,6 @@
+<ShaderProgram>
+    <Shaders>
+        <Shader>"Kaput/Shader/PBR/pbrVert.kasset"</Shader>
+        <Shader>"Kaput/Shader/PBR/pbrFrag.kasset"</Shader>
+    </Shaders>
+</ShaderProgram>
